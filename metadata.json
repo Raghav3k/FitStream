@@ -1,0 +1,8 @@
+{
+  "name": "FitStream",
+  "description": "A live-streaming, real-time coaching, and VOD platform for fitness and yoga instructors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

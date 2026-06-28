@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #2ED199;
+  
+  --color-bg-base: var(--bg-base);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-panel: var(--bg-panel);
+  --color-bg-elevated: var(--bg-elevated);
+  
+  --color-border-subtle: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
+}
+
+@layer base {
+  :root {
+    --bg-base: #f9fafb;
+    --bg-surface: #ffffff;
+    --bg-panel: #f3f4f6;
+    --bg-elevated: #ffffff;
+    
+    --border-subtle: rgba(0,0,0,0.06);
+    --border-strong: rgba(0,0,0,0.15);
+    
+    --text-main: #111827;
+    --text-muted: rgba(0,0,0,0.6);
+    --text-faint: rgba(0,0,0,0.4);
+  }
+
+  .dark {
+    --bg-base: #050505;
+    --bg-surface: #0A0A0A;
+    --bg-panel: #0F0F0F;
+    --bg-elevated: #121212;
+    
+    --border-subtle: rgba(255,255,255,0.05);
+    --border-strong: rgba(255,255,255,0.1);
+    
+    --text-main: #ffffff;
+    --text-muted: rgba(255,255,255,0.6);
+    --text-faint: rgba(255,255,255,0.4);
+  }
+
+  body {
+    @apply font-sans antialiased text-text-main bg-bg-surface overflow-x-hidden transition-colors duration-300;
+  }
+}
