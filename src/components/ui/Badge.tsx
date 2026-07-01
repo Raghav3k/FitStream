@@ -5,6 +5,8 @@ const badgeVariants = "inline-flex items-center rounded-sm px-1.5 py-0.5 text-[1
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: "default" | "secondary" | "destructive" | "outline";
+  children?: React.ReactNode;
+  className?: string;
 }
 
 function Badge({ className, variant = "default", ...props }: BadgeProps) {

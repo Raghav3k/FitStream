@@ -8,7 +8,8 @@ export function Navbar() {
   
   const navItems = [
     { name: "Discover", path: "/", icon: Search },
-    { name: "My Schedule", path: "/dashboard", icon: LayoutDashboard },
+    { name: "My Progress", path: "/dashboard", icon: LayoutDashboard },
+    { name: "Studio", path: "/studio", icon: LayoutDashboard },
   ];
 
   return (

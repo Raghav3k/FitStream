@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { InstructorProfile } from "./pages/InstructorProfile";
 import { LiveStream } from "./pages/LiveStream";
 import { Dashboard } from "./pages/Dashboard";
+import { InstructorStudio } from "./pages/InstructorStudio";
 import { ThemeProvider } from "./components/ThemeProvider";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
               <Route path="/instructor/:id" element={<InstructorProfile />} />
               <Route path="/class/:id" element={<LiveStream />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/studio" element={<InstructorStudio />} />
             </Routes>
           </main>
         </div>

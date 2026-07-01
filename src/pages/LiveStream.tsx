@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Send, Users, Heart, Share2, Expand, Settings } from "lucide-react";
 import { MOCK_CLASSES, INSTRUCTORS } from "../mockData";
